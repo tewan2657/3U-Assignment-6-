@@ -36,19 +36,28 @@ public class A6Q2 {
         int sum = 0;
         for (int i = 0; i < height.length; i++) {
             sum = sum + height[i];
-            }
-        
+            
+        }
         //calculate average
         double average = sum/height.length;
         //print out the average 
         System.out.println("The average height is " + average);
         
         // find out who has an height above average
+       if(height[people]> average){
+            System.out.println("People with a height above average are " + height);
+            
+        
+       }
+            
+           
+        }  
+          
       
          
      }
           
         
         
-    }
+    
 
