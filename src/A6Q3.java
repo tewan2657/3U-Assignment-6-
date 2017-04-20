@@ -18,7 +18,7 @@ public class A6Q3 {
         // create a scanner 
         Scanner input = new Scanner(System.in);
 
-        //creating a list of heights accordin to the number of people 
+        //creating a list of 2 integers
         int[] integer = new int[2];
 
         //asking the user to enter two integers 

@@ -24,7 +24,7 @@ public class A6Q1 {
         int Student = input.nextInt();
         
         //creating a list of marks according to the number of students 
-        int[] marks = new int[Student];
+        double[] marks = new double[Student];
         
         //scan in some marks 
         System.out.println("Enter the marks:");
@@ -33,7 +33,7 @@ public class A6Q1 {
       for (int i = 0; i < marks.length; i++) {
           marks[i] = input.nextInt();
       }
-     int sum = 0;
+     double sum = 0;
         // for loop to go through each number 
         for (int i = 0; i < marks.length; i++) {
          // add up all the marks 
@@ -41,8 +41,10 @@ public class A6Q1 {
         }
       //calculate average 
         double average = sum/marks.length;
+        double rounded =  Math.round(average  *100)/100.00;
+        
         //print out the class average 
-        System.out.println("The class average is " + average + "%");
+        System.out.println("The class average is " + rounded + "%");
         
     }
 }

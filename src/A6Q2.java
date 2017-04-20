@@ -43,19 +43,19 @@ public class A6Q2 {
         //print out the average 
         System.out.println("The average height is " + average);
         
-        // find out who has an height above average
-       if(height[people]> average){
-            System.out.println("People with a height above average are " + height);
-            
+
+           for (int i = 0; i < height.length; i++) {
+               if(height[i]>average){
+                   System.out.print(height[i] + ", ");
+               }
+           }          
         
-       }
-            
            
-        }  
+             System.out.println();
           
       
-         
-     }
+    }     
+    }
           
         
         
