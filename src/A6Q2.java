@@ -23,7 +23,7 @@ public class A6Q2 {
         //get a number from the user 
         int people = input.nextInt();
         
-        //creating a list of heights accordin to the number of people 
+        //creating a list of heights according to the number of people 
         int[] height = new int[people];
         
         //asking the user to enter in the height(cm) according to how many people are there.

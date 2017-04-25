@@ -52,15 +52,19 @@ public class A6Q6 {
         }
         System.out.println("");
         
-        //print out the marks in a nice way 
-        System.out.println("Sorted Marks of the class: ");
-        for (int i = 0; i < size; i++)  {
-            System.out.print(marks[i]);  
-            System.out.print(", ");
-        }
-          
+        //Display the lowest mark in the class
+        System.out.println("Lowest mark in the class: ");
+        System.out.println(marks[0]);   
+        
+        System.out.println("");
+            
+        //display the highest mark in the class
+        System.out.println("Highest mark in the class: ");
+        System.out.println(marks[marks.length - 1]);
+            
         System.out.println("");
         
+        //display the Average of the class
         System.out.println("The Average of the class is:");
         //add up all the marks 
         double sum = 0;
