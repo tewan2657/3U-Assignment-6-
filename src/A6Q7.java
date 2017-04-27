@@ -1,5 +1,4 @@
 
-import java.util.Scanner;
 
 /*
  * To change this template, choose Tools | Templates
@@ -16,26 +15,31 @@ public class A6Q7 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int p = 2;
-        int q = 3;
-        int r =4;
-       //create a scanner 
-        Scanner input = new Scanner(System.in);
-        
-        //create a list of numbers upto 1000
-        boolean marks[] = new boolean[1000];
-        
-        for (int i = 0; i < 500; i++) {
-            int temp = p * i;
-           // System.out.println(temp);  
+       int n = 1000;
+       
+       // number 1 will always be false(not prime) 
+       boolean[]num = new boolean[n];
+       num[0] =  false;
+       
+       //make all numbers prime 
+        for (int f = 1; f < n; f++) {
+            num[f] = true; 
         }
-        for (int i = 0; i < 334; i++) {
-            int temp1 = q * i;
-           // System.out.println(temp1);
-    }
-         for (int i = 0; i < 251; i++) {
-            int temp2 = r * i;
-            System.out.println(temp2);
-    }
-}
+       
+         
+        for (int i = 2; i < n; i++) {
+            if(num[i-1]){
+                
+                
+              //print out the prime numbers 
+                System.out.println(i);
+                
+                //getting rid of any number that is not prime 
+                for (int j = i*1; j <= n; j+=i) {
+                    num[j-1]= false;
+                }    
+            }
+        }
+            
+}               
 }
